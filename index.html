@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlando Agbobli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- COUVERTURE -->
+    <div class="cover">
+        <img class="cover-profile" src="profil_o.png"/>
+        <h1>Orlando Agbobli</h1>
+        <p>Designer, concepteur et formateur en informatique bureautique | plus de 8 ans d'expérience</p>
+        
+        <div style="text-align: center;">
+            <a class="contact-button" href="http://mailto:aorlando2889@gmail.com" target="_blank">ME CONTACTER</a>
+        </div>
+        <div class="cover-contact">
+            <p><a href="http://mailto:aorlando2889@gmail.com" target="_blank">aorlando2889@gmail.com</a></p>
+            <p><a href="tel:+22892497009">00228 92 49 70 09</a></p>
+        </div>
+    </div>
+
+    <!-- SECTION GRISE 1  -->
+    <div class="section section-grise1">
+        <div class="separateur"></div>
+        <p>Je suis réalisateur, concepteur graphique et informaticien, Je suis disponible pour tout vos besoins 24h/24. 
+        </p>
+    </div>
+
+    <!-- SECTION BLANCHE -->
+    <div class="section">
+        <h2>En savoir plus</h2>
+        <img src="secr.jpg" class="col40"/>
+        <div class="col60 float-right">
+            <div class="texte-avec-ligne-verticale-1">
+                <p>Passionné par l'informatique depuis mon jeune âge, j'ai eu un parcours d'autodidacte et ai aussi suivi des formations en ligne dispensés par des spécialistes en Design,
+                    en réalisation de maquettes et en bureautique.<br><br>Je maîtrise les applications comme <b>CorelDraw, Photoshop,</b>
+                    et en bureautique, <b>Word (traitement de texte), Excel (réaliser des calculs), Powerpoint (faire des diapos de présentation et vidéos d'animation), Publisher (réaliser des maquettes à partir de modèles) et Access</b> pour la gestion des bases de données.</p><br>
+                    <img class="logo"src="corel.png">
+                    <img class="logo"src="ps.png">
+                    <img class="logo"src="word.png">
+                    <img class="logo"src="excel.png">
+                    <img class="logo"src="pp.png">
+                    <img class="logo"src="publ.png">
+                    <img class="logo"src="Access.png">
+                <a href="https://www.facebook.com/profile.php?id=100078911295040" target="_blank">EN SAVOIR PLUS SUR MON PROFIL</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- SECTION GRISE 2 -->
+    
+    <div class="section section-grise2">
+        <h2>Portfolio</h2>
+        <div class="body">
+            <div class="slider">
+                <div class="slides">
+                        <input type="radio" name="radio_btn" id="radio1">
+                        <input type="radio" name="radio_btn" id="radio2">
+                        <input type="radio" name="radio_btn" id="radio3">
+                        <input type="radio" name="radio_btn" id="radio4">  
+                    <div class="slide first">
+                        <img src="img1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img2.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img4.jpg">
+                    </div>
+                </div>
+                <div class="navigation_auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1"class="manual-btn"></label>
+                <label for="radio2"class="manual-btn"></label>
+                <label for="radio3"class="manual-btn"></label>
+                <label for="radio4"class="manual-btn"></label>
+            </div>
+        </div>
+        <a href="https://photos.google.com/album/AF1QipOY5C12JkzVT50OB_WxKvGcdBw0WDQRQ7Rd2tK3" target="_blank">VOIR LE CATALOGUE</a>
+    </div>
+
+    <!-- SECTION BLANCHE -->
+    <div class="section">
+        <div class="frame">
+            <p class="frame-title"> <b>Parlons de votre projet</b></p>
+            <table style="width: 100%">
+                <tr>
+                    <td valign="top" align="center"><img src="profil_o.png"></td>
+                    <td>
+                        <div class="texte-avec-ligne-verticale"
+                        style="margin-left: 20px">
+                            <p>
+                                Besoin de discuter de votre projet 
+                                et obtenir l’avis d’un professionnel ?
+                                <br><br>
+                                <a href="http://mailto:aorlando2889@gmail.com" target="_blank">Contactez moi par email</a> ou directement
+                                par téléphone au <a href="tel:+22892497009">00228 92 49 70 09</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById("radio" + counter).checked = true;
+            counter++;
+            if (counter>4){
+                counter=1;
+             }
+        }, 5000);
+    </script>
+</body>
+</html>
